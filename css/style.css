@@ -1,0 +1,220 @@
+@import './global.css';
+
+.wrapper  {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.header-page {
+    flex: 0 1 100%;
+    display: flex;
+    box-sizing: border-box;
+    height: 100vh;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    background-color: aquamarine;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+}
+
+.title-fixed {
+    box-sizing: border-box;
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.title-fixed .logo-page {
+    flex: 0 1 300px;
+    max-width: 100%;
+    height: 100px;
+    background-position: center;
+    background-color: aquamarine;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../assets/logo/logo_size.jpg');
+    border: 1px;
+    border-style: hidden;
+    box-shadow: 5px 5px  10px 1px  cadetblue;
+}
+
+.title-fixed .job-decs-page  {
+    display: flex;
+    flex: 1 1 400px;
+    align-self: center;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.job-decs-page > h1 {
+    text-align: center;
+    color: white;
+    font-size: 3em;
+}
+
+.body-page {
+    padding: 4px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    width: 600px;
+    display: grid;
+    grid-auto-columns: auto;
+    justify-items: center;
+    grid-gap: 4px;
+    justify-content: space-around;
+    align-content: space-around;
+    /* grid-auto-rows: repeat(auto-fill, minmax(300px, 1fr)); */
+}
+
+.body-proyect-page {
+    width: 300px;
+    background-color: salmon;
+}
+
+.body-proyect-page > a {
+    display: block;
+}
+
+.info-page {
+    width: 100%;
+    flex: 1 1 100%;
+    background-color: orange;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info-image {
+    height: 400px;
+    background-color: brown;
+    background-color: cadetblue;
+    background-image: url('../images/image1.jpg');
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+}
+
+.info-descrp {
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    padding: 40px;
+    background-color: whitesmoke;
+}
+
+.info-descrp > h1 
+{
+    flex: 1 1 100%;
+    max-width: 100%;
+}
+
+.info-descrp > h2 {
+    flex: 1 1 100%;
+    max-width: 100%;
+    color: grey;
+}
+
+.info-dimention  {
+    flex: 1 1 400px;
+}
+
+
+.contactWrapper {
+    flex: 1 1 100%;
+    max-width: 100%;
+    display: flex;
+    background-color: grey;
+}
+
+
+.footer-page  {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 100%;
+    color: grey;
+    background-color: black ;
+}
+
+
+
+
+
+.icon {
+    font-size: 2em;
+    color:whitesmoke;
+}
+
+
+
+
+
+#contact {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto
+}
+
+#contact .article {
+    float: left;
+    width: 48%
+}
+
+#contact .artc2 {
+    width: 38%;
+    padding-left: 10%
+}
+
+#contact h2 {
+    text-align: left
+}
+
+#contact {
+    padding: 40px 0
+}
+
+.contactWrapper {
+    width: 100%;
+    background: #181818;
+    background: url("../images/dark_texture.jpg") repeat
+}
+
+.contactWrapper p,.contactWrapper li {
+    color: #6d6d6d !important;
+    padding-top: 2px
+}
+
+.contactWrapper a {
+    font-weight: bold;
+    letter-spacing: 1px
+}
+
+.contactWrapper h2,.contactWrapper h3 {
+    color: #8e8e8e !important
+}
+
+
+@media (max-width: 750px) {
+
+    .article {
+        padding: 15px 0 !important;
+        float: none !important;
+        width: 100% !important
+    }
+
+    #contact p,#contact li {
+        padding: 5px 20px
+    }
+
+}

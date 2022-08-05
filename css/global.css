@@ -1,0 +1,24 @@
+:root {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+}   
+
+*{
+   padding: 0px;
+   margin: 0px; 
+}
+
+h1  {
+    font-size: 3rem;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px
+}
+
+li {
+    padding: 0px;
+    margin: 0px;
+    list-style: none
+}
