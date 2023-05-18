@@ -31,7 +31,6 @@
     justify-content: center;
 }
 
-
 .title-fixed .logo-page {
     flex: 0 1 300px;
     max-width: 100%;
@@ -40,7 +39,7 @@
     background-color: aquamarine;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('../assets/logo/logo_size.jpg');
+    background-image: url('../assets/logo2/ia-logo.jpg');
     border: 1px;
     border-style: hidden;
     box-shadow: 5px 5px  10px 1px  cadetblue;
@@ -148,16 +147,10 @@
 }
 
 
-
-
-
 .icon {
     font-size: 2em;
     color:whitesmoke;
 }
-
-
-
 
 
 #contact {
