@@ -2,25 +2,13 @@ document.querySelector('#year').innerText = (new Date(Date.now())).getFullYear()
 loadOverlay();
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry, index) => {
-        const rand = Math.floor(Math.random() * 30);
+        const rand = Math.floor(Math.random() * 3);
         if (entry.isIntersecting === true) {
-            console.log(Array.from(entry.target.parentElement.children));
-
-            // entry.target.parentElement.children.forEach(function(value, index){
-            //     if(value ==  entry.target) {
-            //         const img = entry.target.querySelector("img");
-            //         entry.target.classList.add("inview");
-            //          entry.target.classList.add("animation");
-            //         img.src = `./images/project${index}.png`;
-            //     }
-            // });
-
+            // console.log(Array.from(entry.target.parentElement.children));
             const img = entry.target.querySelector("img");
             entry.target.classList.add("inview");
             entry.target.classList.add("animation");
-            img.src = `./images/project${index}.png`;
-
-            
+            img.src = `./images/project${rand}.png`;
         } else {
             entry.target.classList.remove("inview");
             entry.target.classList.remove("animation");
@@ -75,7 +63,6 @@ function loadOverlay() {
     o.style.transitionProperty = "transform";
     o.style.transitionTimingFunction = "ease-in";
     o.style.transitionDuration = "2s";
-    // o.style.
     o.style.backgroundColor = "cadetblue";
     o.append(loader);
     document.body.prepend(o);
