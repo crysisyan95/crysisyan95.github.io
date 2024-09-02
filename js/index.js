@@ -75,15 +75,14 @@ function loadOverlay() {
     o.style.transitionProperty = "transform";
     o.style.transitionTimingFunction = "ease-in";
     o.style.transitionDuration = "2s";
-    // o.style.
     o.style.backgroundColor = "cadetblue";
     o.append(loader);
     document.body.prepend(o);
-    window.addEventListener('load',function() {
-        // o.style.opacity =  0; 
+
+    setTimeout(function() { 
         o.style.transform = "translateY(-100%)";
 
-    })
+    },2000)
 
 }
 
